@@ -106,7 +106,7 @@ const ListsOrganizations = () => {
                         <tr>
                             <th>Instituição</th>
                             <th>Quant. Alunos</th>
-                            <th>Pais</th>
+                            <th>Pais Coletores</th>
                             <th>Score</th>
                             <th></th>
                         </tr>

@@ -10,7 +10,7 @@ import DeleteDialog from '../components/DeleteDialog';
 
 /* Página Lista de Departamentos */
 
-const hanking = [
+const ranking = [
     { id: 1, name: 'Trajano de Mendonça', org: '1º' },
     { id: 2, name: 'ETE Porto Digital', org: '2º' },
     { id: 3, name: 'Ginasio Pernambucano', org: '3º' },
@@ -84,7 +84,7 @@ const ListsDepartament = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        {hanking.map(departament => (
+                        {ranking.map(departament => (
                             <tr key={departament.id}>
                                 <td>{departament.name}</td>
                                 <td>{departament.org}</td>

@@ -29,7 +29,7 @@ const NavBar = () => {
                 </NavBarElement>
 
                 <ListsPopover to={[{route: "/ListsOrganizations", title: "Escolas"},
-                                   {route: "/ListsDepartament", title: "Hanking"}]}/>
+                                   {route: "/ListsDepartament", title: "Ranking"}]}/>
 
                 <NavBarElement to="/Contact">
                     <HeadsetMicOutlinedIcon sx={sx} />
