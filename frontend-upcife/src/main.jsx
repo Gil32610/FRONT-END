@@ -7,18 +7,12 @@ import App from "./App"
 import{ createBrowserRouter, RouterProvider, Navigate} from "react-router-dom";
 
 import Home from './routes/Home';
-import Login from "./routes/Login";
-import ForgotPassword from './routes/forgotPassword';
 import ErroPage from "./routes/ErroPage";
-import ListaUser from './routes/ListsUser';
 import ListaOrganizations from './routes/ListsOrganizations';
-import Chat from './routes/Chat';
-import Schedule from './routes/Schedule'
 import Contact from './routes/Contact';
 import Settings from './routes/Settings';
 import Help from './routes/Help';
 import ListaDepartament from './routes/ListsDepartament';
-import ListaProfile from './routes/ListsProfile';
 
 const router = createBrowserRouter([
   {
@@ -30,30 +24,6 @@ const router = createBrowserRouter([
       {
         path: "Home",
         element: <Home/>,
-      },
-      {
-        path: "/",
-        element: <Login/>,
-      },
-      {
-        path: "ForgotPassword",
-        element: <ForgotPassword/>,
-      },
-      {
-        path: "Chat",
-        element: <Chat/>,
-      },
-      {
-        path: "Schedule",
-        element: <Schedule/>,
-      },
-      {
-        path: "ListsUser",
-        element: <ListaUser/>,
-      },
-      {
-        path: "ListsProfile",
-        element: <ListaProfile/>,
       },
       {
         path: "ListsOrganizations",

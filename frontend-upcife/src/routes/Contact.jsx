@@ -4,14 +4,15 @@ import Header from "../components/Header";
 import Copyright from "../components/Copyright";
 
 
-/* Página Contato */
+/* Página Arquivos */
 
 const Contact = () => {
     return (
         <div>
-            <Header title="Contact" />
-            <h1>Contact</h1>
+            <Header title="Arquivos" />
+            <h1>Últimas edições</h1>
             <div className='copy'>
+            
             <Copyright sx={{ pt: 4 }} />
             </div>
         </div>

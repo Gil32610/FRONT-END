@@ -28,18 +28,8 @@ const NavBar = () => {
                     <HomeOutlinedIcon sx={sx} />
                 </NavBarElement>
 
-                <NavBarElement to="/Chat">
-                    <ModeCommentOutlinedIcon sx={sx} />
-                </NavBarElement>
-
-                <NavBarElement to="/Schedule">
-                    <AccessTimeOutlinedIcon sx={sx} />
-                </NavBarElement>
-
-                <ListsPopover to={[{route: "/ListsUser", title: "Usuários"}, 
-                                   {route: "/ListsProfile", title: "Perfis"},
-                                   {route: "/ListsOrganizations", title: "Organizações"},
-                                   {route: "/ListsDepartament", title: "Departamentos"}]}/>
+                <ListsPopover to={[{route: "/ListsOrganizations", title: "Escolas"},
+                                   {route: "/ListsDepartament", title: "Hanking"}]}/>
 
                 <NavBarElement to="/Contact">
                     <HeadsetMicOutlinedIcon sx={sx} />

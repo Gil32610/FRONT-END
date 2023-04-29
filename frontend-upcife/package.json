@@ -1,5 +1,5 @@
 {
-  "name": "frontend-cmtech",
+  "name": "frontend-upcife",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -14,7 +14,9 @@
     "@mui/icons-material": "^5.11.11",
     "@mui/material": "^5.11.13",
     "axios": "^1.3.6",
+    "bootstrap": "^5.2.3",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.7.4",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.9.0"
   },

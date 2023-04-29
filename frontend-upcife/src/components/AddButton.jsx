@@ -11,7 +11,7 @@ const AddButton = (props) => {
             {props.children}
             <Button
                 variant='contained' color='secondary'
-                sx={{background: '#4B0054', marginRight:12, width:150}}
+                sx={{background: '#4B0054 ', marginRight:12, width:150}}
                 onClick={_ => props.handleClickOpen()}
             >
                 Adicionar

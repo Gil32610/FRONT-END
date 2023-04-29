@@ -12,6 +12,7 @@
 .Header .Title {
     margin-left: 15px;
     align-self: end;
+    color:#000000;
 } 
 
 .Header .Options {
@@ -29,5 +30,5 @@
 }
 
 .Header a:hover {
-    color: #cf7dfe;
+    color: #000000;
 }

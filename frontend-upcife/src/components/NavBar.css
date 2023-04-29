@@ -4,7 +4,7 @@
     width: 100px;
     height: 100vh;
     justify-content: space-between;
-    background-color: #4B0054;
+    background-color:  #328113;
     position: sticky;
     top: 0;
 }
@@ -43,7 +43,7 @@
     align-items: start;
     list-style: none;
     border-radius: 8px;
-    background-color: #cf7dfe;
+    background-color:#328113;
 }
 
 .NavBar a {
@@ -51,10 +51,10 @@
 }
 
 .NavBar a:hover {
-    color: #cf7dfe
+    color: #4B0054;
 }
 
 .NavBar li.active a {
-    color: #cf7dfe;
+    color: #328113;
 }
 

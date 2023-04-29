@@ -11,11 +11,11 @@ import DeleteDialog from '../components/DeleteDialog';
 /* Página Lista de Organizações */
 
 const orgs = [
-    { id: 1, name: 'CMTech', phone: '+55 (81) 0 0000-0000', segment: 'Tecnologia da Informação', group: 'CMTech' },
-    { id: 2, name: 'CMTech', phone: '+55 (81) 0 0000-0000', segment: 'Tecnologia da Informação', group: 'CMTech' },
-    { id: 3, name: 'CMTech', phone: '+55 (81) 0 0000-0000', segment: 'Tecnologia da Informação', group: 'CMTech' },
-    { id: 4, name: 'CMTech', phone: '+55 (81) 0 0000-0000', segment: 'Tecnologia da Informação', group: 'CMTech' },
-    { id: 5, name: 'CMTech', phone: '+55 (81) 0 0000-0000', segment: 'Tecnologia da Informação', group: 'CMTech' }
+    { id: 1, name: 'Dom Bosco', student: '235', parent: '23', score: '7429' },
+    { id: 2, name: 'Trajano De Mendonça', student: '569', parent: '57', score: '6325' },
+    { id: 3, name: 'Ginasio Pernambucano', student: '789', parent: '68', score: '4312' },
+    { id: 4, name: 'ETE Porto Digital', student: '345', parent: '34', score: '2135' },
+    { id: 5, name: 'Mariano Texeira', student: '123', parent: '10', score: '987' }
 ];
 
 const ListsOrganizations = () => {
@@ -23,7 +23,7 @@ const ListsOrganizations = () => {
     const [openCreate, setOpenCreate] = useState(false)
     const [openUpdate, setOpenUpdate] = useState(false)
     const [openDelete, setOpenDelete] = useState(false)
-    const [orgData, setOrgData] = useState({id: 0, name: '', phone: '', segment: '', group: ''})
+    const [orgData, setOrgData] = useState({id: 0, name: '', student: '', parent: '', score: ''})
  
     function handleClickOpenCreate() {
         setOpenCreate(true); 
@@ -37,9 +37,9 @@ const ListsOrganizations = () => {
         setOrgData({
             id: org.id,
             name: org.name,
-            phone: org.phone,
-            segment: org.segment,
-            group: org.group
+            student: org.student,
+            parent: org.parent,
+            score: org.score
         })
         setOpenUpdate(true);
     };
@@ -48,9 +48,9 @@ const ListsOrganizations = () => {
         setOrgData({
             id: 0,
             name: '',
-            phone: '',
-            segment: '',
-            group: ''
+            student: '',
+            parent: '',
+            score: ''
         })
         setOpenUpdate(false);
     };
@@ -59,9 +59,9 @@ const ListsOrganizations = () => {
         setOrgData({
             id: org.id,
             name: org.name,
-            phone: org.phone,
-            segment: org.segment,
-            group: org.group
+            student: org.student,
+            parent: org.parent,
+            score: org.score
         })
         setOpenDelete(true)
     }
@@ -70,27 +70,27 @@ const ListsOrganizations = () => {
         setOrgData({
             id: 0,
             name: '',
-            phone: '',
-            segment: '',
-            group: ''
+            student: '',
+            parent: '',
+            score: ''
         })
         setOpenDelete(false)
     }
 
     return (
         <div>
-            <Header title="Lista Organizações" />
+            <Header title="Lista de Escolas" />
 
             <InputOrg
                 open={openCreate}
                 handleClose={handleCloseCreate}
-                id={0} name='' phone='' segment='' group=''
+                id={0} name='' student='' parent='' score=''
                 btnName="Adicionar"
             />
             <InputOrg
                 open={openUpdate}
                 handleClose={handleCloseUpdate}
-                id={orgData.id} name={orgData.name} phone={orgData.phone} segment={orgData.segment} group={orgData.group}
+                id={orgData.id} name={orgData.name} student={orgData.student} parent={orgData.parent} score={orgData.score}
             />
             <DeleteDialog
                 open={openDelete}
@@ -104,10 +104,10 @@ const ListsOrganizations = () => {
                 <table>
                     <thead>
                         <tr>
-                            <th>Organização</th>
-                            <th>Telefone</th>
-                            <th>Segmento</th>
-                            <th>Grupo</th>
+                            <th>Instituição</th>
+                            <th>Quant. Alunos</th>
+                            <th>Pais</th>
+                            <th>Score</th>
                             <th></th>
                         </tr>
                     </thead>
@@ -115,9 +115,9 @@ const ListsOrganizations = () => {
                         {orgs.map(org => (
                             <tr key={org.id}>
                                 <td>{org.name}</td>
-                                <td>{org.phone}</td>
-                                <td>{org.segment}</td>
-                                <td>{org.group}</td>
+                                <td>{org.student}</td>
+                                <td>{org.parent}</td>
+                                <td>{org.score}</td>
                                 <td>
                                     <div className='icones'>
                                         <UpdateButton

@@ -19,7 +19,7 @@ const Header = (props) => {
                 </Link>
                 <Link to="/"> 
                     <div className='Options'>
-                        <h3>Nome Usuário</h3>
+                        <h3>Escola Dom Bosco</h3>
                         <AccountCircleIcon/>
                     </div>
                 </Link> 

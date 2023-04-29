@@ -21,7 +21,7 @@ const Home = () => {
             <Header title="Home"/>
             <div className='right-div'> 
                 <AccountCircleIcon sx={sx}/>
-                <h3 className='text'>Olá Nome Usuário!!</h3>
+                <h3 className='text'>Olá, Bem vindo!!</h3>
             </div>
             <div className='copy'>
             <Copyright sx={{ pt: 4 }} />

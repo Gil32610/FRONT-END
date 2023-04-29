@@ -8,7 +8,7 @@ const DeleteButton = (props) => {
         props.handleClickOpen()
     }
     return (
-        <Button onClick={handleClickOpen} sx={{color: "#63236B"}}>
+        <Button onClick={handleClickOpen} sx={{color: "#4B0054"}}>
             <DeleteIcon />
         </Button>
     )

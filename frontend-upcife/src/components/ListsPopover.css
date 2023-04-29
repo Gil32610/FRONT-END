@@ -2,14 +2,14 @@
     padding-inline: 12px;
     line-height: 200%;
     margin: 0px;
-    background-color: #cf7dfe;
+    background-color: #328113;
     padding-block: 1rem;
 }
 
 .ListsPopover a {
-    color: #4B0054;
+    color: #ffffff;
 }
 
 .ListsPopover a:hover {
-    color: #f5f5f5;
+    color: #b0f584;
 }

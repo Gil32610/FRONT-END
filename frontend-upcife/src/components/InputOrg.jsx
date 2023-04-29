@@ -13,7 +13,7 @@ import InputButton from "./InputButton";
 const InputOrg = (props) => {
 
     const [name, setName] = useState(props.name)
-    const [phone, setPhone] = useState(props.phone)
+    const [student, setStudent] = useState(props.student)
     const [segment, setSegment] = useState(props.segment)
     const [group, setGroup] = useState(props.group)
 
@@ -23,7 +23,7 @@ const InputOrg = (props) => {
 
     useEffect(() => {
         setName(props.name)
-        setPhone(props.phone)
+        setStudent(props.student)
         setSegment(props.segment)
         setGroup(props.group)
     }, [props.open])
@@ -32,29 +32,25 @@ const InputOrg = (props) => {
         <div>
             <Dialog open={props.open} onClose={handleClose}>
                 <DialogTitle>
-                    Cadastro de Organização
+                    Cadastro da Escola
                 </DialogTitle>
                 <DialogContent>
                     <TextField
-                        id="nome" label="Nome da Organização" type="text" variant="outlined" fullWidth
+                        id="nome" label="Nome da Escola" type="text" variant="outlined" fullWidth
                         value={name} sx={{ marginTop: 4 }}
                         onChange={e => setName(e.target.value)}
                     />
                     <TextField
-                        id="telefone" label="Telefone" type="text" variant="outlined" fullWidth
-                        value={phone} sx={{ marginTop: 4 }}
-                        onChange={e => setPhone(e.target.value)}
+                        id="telefone" label="Alunos matriculados" type="text" variant="outlined" fullWidth
+                        value={student} sx={{ marginTop: 4 }}
+                        onChange={e => setStudent(e.target.value)}
                     />
                     <TextField
-                        id="segmento" label="Segmento" type="text" variant="outlined" fullWidth
+                        id="segmento" label="Pais atuantes" type="text" variant="outlined" fullWidth
                         value={segment} sx={{ marginTop: 4 }}
                         onChange={e => setSegment(e.target.value)}
                     />  
-                    <TextField
-                        id="grupo" label="Grupo" type="text" variant="outlined" fullWidth
-                        value={group} sx={{ marginTop: 4 }}
-                        onChange={e => setGroup(e.target.value)}
-                    />
+
                 </DialogContent>
                 <DialogActions>
                     <Button
