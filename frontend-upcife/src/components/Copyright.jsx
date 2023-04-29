@@ -22,4 +22,5 @@ function Copyright(props) {
   );
 }
 
+/* updatres */
 export default Copyright;
